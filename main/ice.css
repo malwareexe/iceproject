@@ -5,7 +5,7 @@
 	when the favorite button is clicked.
 */
 #iceTagMenuWrapper {
-	position: relative;
+    position: relative;
 }
 
 
@@ -14,16 +14,16 @@
 	button is clicked.
 */
 #iceTagMenu {
-	overflow: hidden;
-	display: block;
-	position: absolute;
-	background-color: #f2f2f2;
-	z-index: 10;
-	width: 200px;
-	border-radius: 0 4px 4px 4px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin-left: 84px;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    background-color: #f2f2f2;
+    z-index: 10;
+    width: 200px;
+    border-radius: 0 4px 4px 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 84px;
 }
 
 
@@ -31,36 +31,36 @@
 	The list of tags inside the tag menu.
 */
 #iceTagList {
-	height: 0;
-	transition: height 0.5s;
-	overflow: hidden;
-	width: 100%;
+    height: 0;
+    transition: height 0.5s;
+    overflow: hidden;
+    width: 100%;
 }
 
 /*
 	A tag from the iceTagList.
 */
 .iceTag {
-	color: #4C4C4C;
-	padding: 8px;
-	padding-left: 15px;
-	cursor: pointer;
-	clear: both;
-	display: block;
-	font-size: 13px;
+    color: #4C4C4C;
+    padding: 8px;
+    padding-left: 15px;
+    cursor: pointer;
+    clear: both;
+    display: block;
+    font-size: 13px;
 }
 
 .iceTag:hover {
-	background-color: #E8E7E6;
+    background-color: #E8E7E6;
 }
 
 /*
 	The text of a tag.
 */
 .iceTagText {
-	margin-left: 10px;
-	width: 100px;
-	display: inline-block;
+    margin-left: 10px;
+    width: 100px;
+    display: inline-block;
 }
 
 /*
@@ -68,20 +68,20 @@
 	tag text in the tag menu.
 */
 .iceTagSquare {
-	background-color: #4C4C4C;
-	display: inline-block;
-	width: 9px;
-	height: 9px;
-	color: #4C4C4C;
-	border-radius: 2px;
-	font-size: 9px;
-	line-height: 110%;
-	padding-left: 1px;
-	padding-top: 1px;
-	-ms-user-select: none;
-	-moz-user-select: none;
-	-webkit-user-select: none;
-	user-select: none;
+    background-color: #4C4C4C;
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    color: #4C4C4C;
+    border-radius: 2px;
+    font-size: 9px;
+    line-height: 110%;
+    padding-left: 1px;
+    padding-top: 1px;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 /*
@@ -89,7 +89,7 @@
 	check box text white-ish.
 */
 .iceTag.checked .iceTagSquare {
-	color: #f2f2f2;
+    color: #f2f2f2;
 }
 
 /*
@@ -97,11 +97,11 @@
 	inside the tag menu.
 */
 #newTag {
-	background-color: #E8E7E6;
-	border: none;
-	color: #595959;
-	margin: 5px 12px;
-	padding: 0 10px;
+    background-color: #E8E7E6;
+    border: none;
+    color: #595959;
+    margin: 5px 12px;
+    padding: 0 10px;
 }
 
 
@@ -112,9 +112,9 @@
 	on the favorites page.
 */
 #editTagsLink {
-	position: inherit;
-	z-index: 10;
-	float: right;
+    position: inherit;
+    z-index: 10;
+    float: right;
 }
 
 /*
@@ -122,15 +122,15 @@
 	the tag edit menu, when clicking the "edit tags" link.
 */
 #editOverlay {
-	opacity: .95;
-	cursor: pointer;
-	background-color: #000;
-	width: 100%;
-	height: 100%;
-	z-index: 90;
-	position: fixed;
-	top: 0;
-	left: 0;
+    opacity: .95;
+    cursor: pointer;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    z-index: 90;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 /*
@@ -138,132 +138,133 @@
 	"edit tags" link on favorites page.
 */
 #iceTagEditMenu {
-	background: #212121;
-	padding: 40px 58px 20px 58px;
-	height: 400px;
-	width: 400px;
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	margin-top: -200px;
-	margin-left: -200px;
-	letter-spacing: 0;
-	z-index: 100;
-	cursor: auto;
+    background: #212121;
+    padding: 40px 58px 20px 58px;
+    height: 400px;
+    width: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+    letter-spacing: 0;
+    z-index: 100;
+    cursor: auto;
 }
 
 #iceTagEditMenu h2 {
-	font-size: 24px;
-	line-height: 24px;
-	color: #FFF;
-	margin-bottom: 7px;
-	font-weight: 400;
-	letter-spacing: 0;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFF;
+    margin-bottom: 7px;
+    font-weight: 400;
+    letter-spacing: 0;
 }
 
 #iceTagEditMenu > p {
-	color: #999;
-	padding: 0;
-	line-height: normal;
-	margin-bottom: 30px;
+    color: #999;
+    padding: 0;
+    line-height: normal;
+    margin-bottom: 30px;
 }
 
 /* The close button. */
 #iceTagEditMenu .icon-x-light {
-	top: 12px;
-	right: 10px;
+    top: 12px;
+    right: 10px;
 }
 
 #iceTagEditMenu table {
-	width: 100%;
+    width: 100%;
 }
 
 #iceTagEditMenu tr {
-	height: 30px;
+    height: 30px;
 }
 
 #iceTagEditMenu tr:nth-child(even) {
-	background-color: #1c1c1c;
+    background-color: #1c1c1c;
 }
 
 #iceTagEditMenu td {
-	font-size: 16px;
-	vertical-align: bottom;
-	padding: 4px;
+    font-size: 16px;
+    vertical-align: bottom;
+    padding: 4px;
 }
 
 #iceTagEditMenu td:nth-child(1) {
-	max-width: 280px;
-	width: 300px;
-	text-overflow: ellipsis;
-	padding: 4px;
+    max-width: 280px;
+    width: 300px;
+    text-overflow: ellipsis;
+    padding: 4px;
 }
 
 #iceTagEditMenu td:nth-child(2) {
-	max-width: 60px;
-	padding-right: 4px;
+    max-width: 60px;
+    padding-right: 4px;
 }
 
 #iceTagEditMenu td:nth-child(2) img {
-	cursor: pointer;
-	opacity: .2;
-	float: right;
-	margin-left: 4px;
-	width: 16px;
-	height: 16px;
+    cursor: pointer;
+    opacity: .2;
+    float: right;
+    margin-left: 4px;
+    width: 16px;
+    height: 16px;
 }
 
 /*
 	Input menus created when clicking the edit button.
 */
 #iceTagEditMenu input {
-	margin: 0;
-	padding: 0;
-	border-radius: 0;
-	border: none;
-	box-shadow: none;
-	outline: none;
-	font-size: 16px;
-	vertical-align: bottom;
-	height: 22px;
-	background-color: inherit;
-	border-bottom: 1px solid #85BF25;
-	width: 220px;
+
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    font-size: 16px;
+    vertical-align: bottom;
+    height: 22px;
+    background-color: inherit;
+    border-bottom: 1px solid #85BF25;
+    width: 220px;
 }
 
 #iceTagEditMenu tr:hover td:nth-child(2) img {
-	opacity: .8;
+    opacity: .8;
 }
 
 #iceTagEditMenu b {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 /*
 	A vertically scrollable element.
 */
 .iceScroll {
-	overflow-y: auto;
-	overflow-x: hidden;
-	height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 300px;
 }
 
 /*
 	...seriously?
 */
 .db {
-	background-image: url("http://i.imgur.com/8UDu6Ps.png");
-	width: 100px;
-	height: 120px;
-	margin-top: 223px;
-	margin-left: 353px;
-	position: absolute;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	z-index: 200;
-	background-position: 0 150px;
-	-webkit-transition: background-position 1s ease-in-out;
-	-moz-transition: background-position 1s ease-in-out;
-	-o-transition: background-position 1s ease-in-out;
-	transition: background-position 1s ease-in-out;
+    background-image: url("http://i.imgur.com/8UDu6Ps.png");
+    width: 100px;
+    height: 120px;
+    margin-top: 223px;
+    margin-left: 353px;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 200;
+    background-position: 0 150px;
+    -webkit-transition: background-position 1s ease-in-out;
+    -moz-transition: background-position 1s ease-in-out;
+    -o-transition: background-position 1s ease-in-out;
+    transition: background-position 1s ease-in-out;
 }

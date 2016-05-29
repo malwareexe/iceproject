@@ -2,6 +2,7 @@ var loggedIn = false;
 var tasks = [];
 var user = {};
 
+
 (function() {
 	
 	user.posts = [];
@@ -16,7 +17,6 @@ var user = {};
 		}
 		return null;
 	}
-	
 	function checkIfTagExists(tag) {
 		for (var i = 0; i < user.allTags.length; i++) {
 			if (user.allTags[i].name === tag.name && user.allTags[i].num === tag.num) {
@@ -26,7 +26,6 @@ var user = {};
 		}
 		return false;
 	}
-	
 	user.getPosts = function(tag) {
 		var resp = [];
 		if (checkIfTagExists(tag)) {
@@ -43,7 +42,6 @@ var user = {};
 	user.getTag = function(tagNum) {
 		return user.allTags[tagNum];
 	}
-	
 	user.renameTag = function(renamedTag) {
 		var success = true;
 		// check if renamed tag is the same NAME as any of the tags that already exist.
@@ -103,12 +101,10 @@ var user = {};
 		post.tags.push(tagNum);
 		user.store();//temp
 	}
-	
 	user.removeTagFromPost = function(id, tagNum)  {
 		user.getPost(id).tags.remove(tagNum);
 		user.store(); //temp
 	}
-	
 	user.createTag = function(tagName) {
 		for (var i = 0; i < user.allTags.length; i++) {
 			if (user.allTags[i].name === tagName) {
@@ -150,7 +146,6 @@ var user = {};
 		console.log("Storing everything.")
 		chrome.storage.local.set({[user.id]: {posts: user.posts, allTags: user.allTags}});
 	}
-	
 })();
 
 
@@ -199,7 +194,7 @@ function handlePageReq(req, sender, sendResponse) {
 		//debugger;
 		sendResponse(resp);
 	}
-	
+
 	if (req.type === "load") {
 		
 		// just in case check
@@ -211,7 +206,7 @@ function handlePageReq(req, sender, sendResponse) {
 			user.id = null;
 			loggedIn = false;
 		}
-		
+	
 		// if signed, this means the user is logged into imgur.
 		if (req.info.signed !== "false" && req.info.userId) { //sometimes, imgur returns signed = true, but userId is undefined (if you log out).
 			// loggedin is my way of storing that they are logged in and the extension is aware of it. not sure if i should replicate
