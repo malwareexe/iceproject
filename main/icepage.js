@@ -679,7 +679,7 @@ function isScrolledIntoView(elem) {
 function devtro() {
     if (window.location.href.toString().indexOf("imgur.com/user") >= 0) {
         var tro = $("#mycarousel");
-        tro.append($("<li><img src='http://i.share.pho.to/405fe219_c.png' class='title' title='<h2>Icegur Developer</h2>Developed The icegur extension for Imgur.'></li>"));
+        tro.append($("<li><img src='http://i.share.pho.to/c832035f_c.png' class='title' title='<h2>Icegur Developer</h2>Developed The icegur extension for Imgur.'></li>"));
     }
 }
 
